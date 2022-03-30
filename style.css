@@ -58,11 +58,15 @@ header div {
 
 /* Section Setting */
 main {
-    padding: 0 20%;
+    float: left;
+}
+main section:nth-child(2n+2) {
+    background-color: beige;
 }
 section {
     display: inline-block;
-    padding: 10% 0;
+    padding: 5% 20%;
+    width: 100%;
 }
 .section-svg {
     float: left;
@@ -78,7 +82,36 @@ section {
     margin: 5% 0;
 }
 
+/* Specific of single Section */
 
+/* Footer */
+
+footer {
+    background-color: #23272A;
+    color: white;
+    width: 100%;
+    padding: 5% 20%;
+    float: left;
+}
+
+footer div {
+    float: left;
+    display: inline-block;
+}
+.foot-social {
+    width: 30%;
+}
+.foot-list {
+    width: 17.5%;
+    text-align: center;
+}
+.foot-list li {
+    list-style: none;
+}
+.foot-logo {
+    width: 100%;
+    border-top: 1px solid white;
+}
 
 
 
@@ -89,21 +122,5 @@ section {
     clear: both;
     display: table;
   }
-
-
-
-
-/* Debug Settings */
-header, main, footer {
-    width: 100%;
-}
-header, footer {
-    background-color: blue;
-    /* height: 200px; */
-}
-main {
-    background-color: white;
-    height: 500px;
-}
 
 /* End Debug */
