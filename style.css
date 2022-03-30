@@ -12,7 +12,7 @@ a {
     text-decoration: none;
     color: white;
 }
-h1 {
+h1,h2,h3,h4 {
     margin: 0.5em 0;
 }
 
@@ -119,7 +119,7 @@ main {
     width: 100%;
 }
 main section:nth-child(2n+2) {
-    background-color: beige;
+    background-color: #f6f6f6;
 }
 section {
     display: inline-block;
@@ -141,6 +141,39 @@ section {
 }
 
 /* Specific of single Section */
+/* 2nd Section */
+#section-2 .section-aside{
+    float: left;
+}
+#section-2 .section-svg {
+    float: right;
+}
+
+/* 4th Section */
+
+#section-4-big .section-aside,
+#section-4-big .section-svg {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+/* Call section */
+#section-call {
+    width: 100%;
+    text-align: center;
+}
+.btn-call {
+    margin-top: 2em;
+    background-color: #8ea1e1;
+    color: white;
+}
+.btn:hover,
+a:hover {
+    font-weight: bold;
+    transform: scale(105%);
+
+}
 
 /* FOOTER SETTINGS */
 
@@ -156,8 +189,14 @@ footer div {
     display: inline-block;
 }
 
+.foot-title {
+    color: #6f85d3;
+    font-weight: bold;
+    margin-top: 0;
+}
 .foot-social {
     width: 30%;
+    padding-right: 10%;
 }
 .foot-list {
     width: 17.5%;
@@ -174,6 +213,10 @@ footer div {
 }
 .foot-login {
     float: right;
+    background-color: #8ea1e1;
+}
+.foot-login.btn {
+    padding: 0.3em;
 }
 
 
