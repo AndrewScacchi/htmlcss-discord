@@ -90,7 +90,7 @@ header p {
     width: 2em;
     background-color: inherit;
     border-radius: 50% 0 0 50%;
-    border: 1px solid black;
+    border: inherit;
     border-right: none;
 }
 .btn::after {
@@ -102,7 +102,7 @@ header p {
     width: 2em;
     background-color: inherit;
     border-radius: 0 50% 50% 0;
-    border: 1px solid black;
+    border: inherit;
     border-left: none;
 }
 
@@ -118,12 +118,18 @@ main {
     float: left;
     width: 100%;
 }
-main section:nth-child(2n+2) {
+/* main section:nth-child(2n+2) {
     background-color: #f6f6f6;
+} */ 
+/* Why u no work anymore? you peace of shit! */
+main .section-odd {
+    background-color: #f6f6f6;
+    margin-top: 0;
 }
+
 section {
     display: inline-block;
-    padding: 5% 20%;
+    padding: 5% 20% 10%;
     width: 100%;
 }
 .section-svg {
@@ -152,21 +158,47 @@ section {
 /* 4th Section */
 
 #section-4-big .section-aside,
-#section-4-big .section-svg {
+#section-4-big .section-svg,
+#section-4-big div {
     width: 100%;
     text-align: center;
     padding: 0;
 }
+#section-4-big div {
+    margin-top: 5em;
+    float: left;
+}
+
+#svg-stars {
+    width: 50%;
+    z-index: 10;
+    margin-bottom: -2em;
+}
+
+/* Wave Setting */
+.wave {
+    margin-bottom: -1em;
+    margin-top:-10em;
+    z-index: 10;
+    filter: invert(93%) sepia(98%) saturate(104%) hue-rotate(201deg) brightness(114%) contrast(93%)
+}
+.wave-white {
+    margin-bottom: -1em;
+    margin-top:-10em;
+    z-index: 10;
+    filter: invert(100%) sepia(100%) saturate(14%) hue-rotate(232deg) brightness(103%) contrast(103%);}
 
 /* Call section */
 #section-call {
     width: 100%;
     text-align: center;
+    margin-top: -1em;
 }
 .btn-call {
     margin-top: 2em;
     background-color: #8ea1e1;
     color: white;
+    border: 1px solid #8ea1e1;
 }
 .btn:hover,
 a:hover {
@@ -197,6 +229,13 @@ footer div {
 .foot-social {
     width: 30%;
     padding-right: 10%;
+}
+.foot-social div,
+.foot-social h2{
+    margin-bottom: 1em;
+}
+.foot-social i {
+    margin-right:0.2em;
 }
 .foot-list {
     width: 17.5%;

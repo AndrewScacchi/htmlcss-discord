@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Discord</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/50320cf54b.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -38,7 +39,10 @@
             </div>
             <!-- Btn with ::after&::before for cool useless effect -->
             <div class="head-btn">
-                <button class="btn btn-white">Scarica per Mac</button>
+                <button class="btn btn-white">
+                    <i class="fa-solid fa-arrow-down-long"></i>
+                    Scarica per Mac
+                </button>
                 <button class="btn btn-black">Apri Discord nel tuo Browser</button>
             </div>
         </header>
@@ -55,7 +59,10 @@
                     </p>
                 </aside>
             </section>
-            <section class="clearfix" id="section-2">
+            <!-- Odd Wave -->
+            <object class="wave" data="img/wave.svg" width=100% > </object>
+            <!-- End Wave -->
+            <section class="clearfix section-odd" id="section-2">
                 <object class="section-svg" id="svg-2" data="img/item2.svg" width="300px" > </object>
                 <aside class="section-aside">
                     <h2>Dove trovarsi é facile</h2>
@@ -66,6 +73,9 @@
                     </p>
                 </aside>
             </section>
+            <!-- Even Wave -->
+            <object class="wave-white" data="img/wave.svg" width=100% > </object>
+            <!-- End Wave -->
             <section class="clearfix" id="section-3">
                 <object class="section-svg" id="svg-3" data="img/item3.svg" width="300px" > </object>
                 <aside class="section-aside">
@@ -77,8 +87,10 @@
                     </p>
                 </aside>
             </section>
-            <!-- Final section -->
-            <section class="clearfix" id="section-4-big">
+            <!-- Odd Wave -->
+            <object class="wave" data="img/wave.svg" width=100% > </object>
+            <!-- End Wave -->
+            <section class="clearfix section-odd" id="section-4-big">
                 <aside class="section-aside">
                     <h2>Tecnologia affidabile per tenersi in contatto</h2>
                     <p>
@@ -89,11 +101,19 @@
                     </p>
                 </aside>
                 <object class="section-svg" id="svg-4-big" data="img/item4-big.svg" width="300px" > </object>
+                <div>
+                    <object class="stars-svg" id="svg-stars" data="img/stars.svg" width=60% > </object>
+
+                    <h2>Pronto ad iniziare la tua avventura?</h2>
+                    <button class="btn btn-call">
+                        <i class="fa-solid fa-arrow-down-long"></i>
+                        Scarica per Mac
+                    </button>
+                </div>
             </section>
-            <section class="clearfix" id="section-call">
-                <h2>Pronto ad iniziare la tua avventura?</h2>
-                <button class="btn btn-call">Scarica per Mac</button>
-            </section>
+            <!-- <section class="clearfix section-odd" id="section-call">
+                
+            </section> -->
 
 
         </main>
@@ -101,8 +121,17 @@
         <footer class="">
             <div class="foot-social">
                 <h2 class="foot-title">Il tuo posto per parlare</h2>
-                <div>Italiano</div>
-                <div>icon icon icon icon</div>
+                <div>
+                    <img src="img/ita.png" alt="Italian Flag" height="12em">
+                    Italiano
+                    <i class="fa-solid fa-angle-down"></i>
+                </div>
+                <div>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-youtube"></i>
+                </div>
             </div>
             <div class="foot-list">
                 <ul>
