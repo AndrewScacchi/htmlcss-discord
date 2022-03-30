@@ -9,28 +9,40 @@
 </head>
 <body>
     <div id="wrapper">
-        <!-- Header, 100%w, logo,nav,access & Jumbotron -->
-        <header class="clearfix">
-            <div class="head-logo">LOGO</div>
+        <!-- Header, 100%w, logo,nav,access & Jumbotron, btn too -->
+        <header class="clearfix">          
+            <object class="head-logo" data="img/logo.svg" width="50px" > </object>
             <div class="head-nav">
                 <ul class="head-nav-ul">
-                    <li><a href="">firstEntry</a></li>
-                    <li><a href="">firstEntry</a></li>
-                    <li><a href="">firstEntry</a></li>
-                    <li><a href="">firstEntry</a></li>
-                    <li><a href="">firstEntry</a></li>
+                    <li><a href="">Scarica</a></li>
+                    <li><a href="">Perchè Discord</a></li>
+                    <li><a href="">Nitro</a></li>
+                    <li><a href="">Sicurezza</a></li>
+                    <li><a href="">Assistenza</a></li>
                 </ul>
             </div>
             <div class="head-login">
-                <a href="">LogIn</a>
+                <a class="btn" href="">Accedi</a>
             </div>
+            <!-- This is tecnically the Jumbotron -->
             <div class="head-jumbo">
-                <h1>HUMBLE JUMBO</h1>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                <button>Press Here</button>
-                <button>Not Here</button>
+                <h1>Il tuo posto per parlare</h1>
+                <p>
+                    Che tu faccia parte di un club scolastico,
+                    gruppo di gamer, comunità artistica mondiale,
+                    o semplicemente di un piccolo gruppo di amici
+                    che vuole passare il tempo assieme, Discord rende
+                    più facile chiacchierare ogni giorno e ritrovarsi
+                    più spesso.
+                </p>
+            </div>
+            <!-- Btn with ::after&::before for cool useless effect -->
+            <div class="head-btn">
+                <button class="btn btn-white">Scarica per Mac</button>
+                <button class="btn btn-black">Apri Discord nel tuo Browser</button>
             </div>
         </header>
+        <!-- Main Section, SVG+Aside, fairly simple -->
         <main class="clearfix">
             <section class="clearfix" id="section-1">
                 <object class="section-svg" id="svg-1" data="img/item1.svg" width="300px" > </object>
@@ -49,7 +61,7 @@
 
 
         </main>
-        <!-- Footer -->
+        <!-- Footer, simple but still a mess.. how?? -->
         <footer class="">
             <div class="foot-social">
                 <h4>Text Here</h4>
@@ -92,8 +104,8 @@
             </div>
             <!-- Footer Bottom Logo -->
             <div class="foot-end">
-                <div class="logo">LOGO</div>
-                <div class="foot-login"></div>
+                <object class="foot-logo" data="img/logo.svg" width="100px" > </object>
+                <div class="foot-login"><a href="">login</a></div>
             </div>
         </footer>
     </div>

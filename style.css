@@ -3,6 +3,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Whitney,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 #wrapper {
     position:relative;
@@ -10,23 +11,29 @@
 a {
     text-decoration: none;
     color: white;
-    margin: 1em;
+}
+h1 {
+    margin: 0.5em 0;
 }
 
-/* Header Settings */
+/* HEADER SETTINGS */
     
 header {
     padding: 5% 20%;
     color: white;
     background: url('img/jumbo.png');
     background-size: cover; 
+    min-height: 200px;
 }
-header div {
-    height: 100px;
+header div, header object {
     float: left; 
+    display: inline-block;
+}
+header p {
+    margin-bottom: 2em;
 }
 
-    /* NavBar */
+/* NavBar */
 
 .head-logo {
     width: 20%;
@@ -34,6 +41,7 @@ header div {
 .head-nav {
     text-align: center;
     width: 60%;
+    margin-top: 0.5em;
 }
 .head-nav-ul li{
     display: inline-block;
@@ -42,23 +50,73 @@ header div {
     text-align: right;
     width: 20%;
 }
-.head-login a {
-    background-color: white;
-    padding: 1em 2em;
+.head-login a{
+    display: inline-block;
+    background-color: #23272A;
+    padding: 0.5em 0.2em;
     border: 1px solid black;
-    color: black;
+    color: white;
 }
 
-    /* Jumbotron */
+/* Jumbotron */
 
 .head-jumbo {
     text-align: center;
     width: 100%;
+    padding: 5% 20% 0;
 }
+
+/* BUTTONSS!!!! I spent way too much time on these bastards! */
+.head-btn {
+    width: 100%;
+    text-align: center;
+}
+.btn {
+    position: relative;
+    padding: 1em 0.2em;
+    background: white;
+    border: none;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    color: black;
+    margin: 0 2.5em;
+}
+.btn::before {
+    content: "";
+    position: absolute;
+    top: -1px;
+    left: -2em;;
+    height: 100%;  
+    width: 2em;
+    background-color: inherit;
+    border-radius: 50% 0 0 50%;
+    border: 1px solid black;
+    border-right: none;
+}
+.btn::after {
+    content: "";
+    position: absolute;
+    top: -1px;
+    right: -2em;;
+    height: 100%;  
+    width: 2em;
+    background-color: inherit;
+    border-radius: 0 50% 50% 0;
+    border: 1px solid black;
+    border-left: none;
+}
+
+.btn-black {
+    background-color: #23272A;
+    color: white;
+}
+
+/* MAIN SETTING */
 
 /* Section Setting */
 main {
     float: left;
+    width: 100%;
 }
 main section:nth-child(2n+2) {
     background-color: beige;
@@ -84,7 +142,7 @@ section {
 
 /* Specific of single Section */
 
-/* Footer */
+/* FOOTER SETTINGS */
 
 footer {
     background-color: #23272A;
@@ -93,24 +151,29 @@ footer {
     padding: 5% 20%;
     float: left;
 }
-
 footer div {
     float: left;
     display: inline-block;
 }
+
 .foot-social {
     width: 30%;
 }
 .foot-list {
     width: 17.5%;
-    text-align: center;
+    text-align: left;
 }
 .foot-list li {
     list-style: none;
 }
-.foot-logo {
-    width: 100%;
+.foot-end {
     border-top: 1px solid white;
+    margin-top: 5%;
+    padding: 1em 0;
+    width: 100%;
+}
+.foot-login {
+    float: right;
 }
 
 
@@ -123,4 +186,3 @@ footer div {
     display: table;
   }
 
-/* End Debug */
