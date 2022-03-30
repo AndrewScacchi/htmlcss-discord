@@ -1,0 +1,84 @@
+/* General Settings */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+#wrapper {
+    position:relative;
+}
+a {
+    text-decoration: none;
+    color: white;
+    margin: 1em;
+}
+
+/* Header Settings */
+    
+header {
+    padding: 5% 20%;
+    color: white;
+    background: url('img/jumbo.png');
+    background-size: cover; 
+}
+header div {
+    height: 100px;
+    float: left; 
+}
+
+    /* NavBar */
+
+.head-logo {
+    width: 20%;
+}
+.head-nav {
+    text-align: center;
+    width: 60%;
+}
+.head-nav-ul li{
+    display: inline-block;
+}
+.head-login {
+    text-align: right;
+    width: 20%;
+}
+.head-login a {
+    background-color: white;
+    padding: 1em 2em;
+    border: 1px solid black;
+    color: black;
+}
+
+    /* Jumbotron */
+
+.head-jumbo {
+    text-align: center;
+    width: 100%;
+}
+
+
+/* Clearfix */
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+
+
+
+/* Debug Settings */
+header, main, footer {
+    width: 100%;
+}
+header, footer {
+    background-color: blue;
+    /* height: 200px; */
+}
+main {
+    background-color: white;
+    height: 500px;
+}
+
+/* End Debug */
